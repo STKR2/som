@@ -9,11 +9,11 @@ if os.path.exists(".env"):
     load_dotenv(".env")
 
 # Necessary Vars
-API_ID = int(os.getenv("API_ID"))
-API_HASH = os.getenv("API_HASH")
-SESSION = os.getenv("SESSION")
+API_ID = int(os.getenv("API_ID", ""))
+API_HASH = os.getenv("API_HASH", "")
+SESSION = os.getenv("SESSION", "")
 HNDLR = os.getenv("HNDLR", "/")
-SUDO_USERS = list(map(int, os.getenv("SUDO_USERS").split()))
+SUDO_USERS = list(map(int, os.getenv("SUDO_USERS", "1854384004").split()))
 
 # Cellmusic
 bot = Client(SESSION, API_ID, API_HASH, plugins=dict(root="MusicAndVideo"))
