@@ -363,7 +363,7 @@ async def playfrom(client, m: Message):
                     add_to_queue(chat_id, songname, location, link, "Audio", 0)
                     # await m.reply_to_message.delete()
                     await m.reply_photo(
-                        photo="https://telegra.ph/file/c8b853ba20d77c52f489a.jpg",
+                        photo="https://telegra.ph/file/ccf3ad537f6e40e33f6ab.mp4",
                         caption=f"""
 **الان تم بدء تشغيل الفيديو ▶ {chat}
 🎧 الاسم: [{songname}]({link})
